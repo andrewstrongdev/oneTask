@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "title": "Make your bed",
+        "note": "Start your day off organized!"
+    },
+    {
+        "id": 1,
+        "title": "Make Breakfast",
+        "note":"Fuel the rest of your day with a good breakfast!"
+    },
+    {
+        "id": 2,
+        "title": "Go Climb",
+        "note":"The easiest way to get out of bed is to be excited about what you are going to do!"
+    },
+    {
+        "id": 3,
+        "title": "Work on React",
+        "note":"All the progress you make in React will helpo you get a job!"
+    }
+]

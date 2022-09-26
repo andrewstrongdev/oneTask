@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
+import axios from 'axios'
+import Form from './components/Form'
+import Taskcard from './components/Taskcard'
+import React from 'react'
 
 function App() {
+  const [currentTasks, setCurrentTasks] = React.useState([])
+
+  const deleteTask = () => {
+    axios.delete('http://localhost:4747/api/task')
+      .then(res => setCurrentTasks(res.data))
+  }
+
+  function getAllTasks() {
+    axios.get('http://localhost:4747/api/tasks').then(res => setCurrentTasks(res.data))
+  }
+
+  React.useEffect(function(){
+
+    getAllTasks()
+          
+    // axios.get('http://localhost:4747/api/tasks').then(res => setCurrentTasks(res.data))
+  
+},[])
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <Form 
+          getAllTasks={getAllTasks}
+        />
+        <Taskcard 
+          currentTasks={currentTasks}
+          deleteTask={deleteTask}
+        />
     </div>
   );
 }
