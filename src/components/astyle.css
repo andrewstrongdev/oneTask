@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.nav--main{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #dde5f865 1.18%, #5dcefb56 100%);
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.nav--title {
+    margin: auto;
+    color: #259bbcb4;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.form--div {
+    
+    width: 80vw;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.form--input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+    width: 30vw;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.form--button {
+    /* grid-column: 1 / -1; */
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #7963cb 1.14%, #95a3e3 100%);
+    color: white;
+    width: 63vw;
+    height: 40px;
+    cursor: pointer;
+}
+
+.card--main{
+    width: 80vw;
+    height: 65vh;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.222);
+    border-radius: 10px;
+    background-color: #faf20044;
+    background-image: 'url(./image)' ;
+}
+
+.card--task {
+    font-family: 'Caveat', cursive;
+    font-size:100px;
+}
+
+.card--note{
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 150px;
+}
+
+.card--button {
+    border-radius: 5px;
+    /* background: linear-gradient(90.41deg, #4a27c8 1.14%, #6c82e6 100%); */
+    background: linear-gradient(90.41deg, #7963cb 1.14%, #95a3e3 100%);
+    color: white;
+    height: 40px;
+    width: 63vw;
+    margin-top: 30px;
+    cursor: pointer;
+
+}

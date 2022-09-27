@@ -11,8 +11,8 @@ export default function Form(props) {
   }
     return(
         <div className="form--div">
-            <input placeholder='title' onChange={e => setTitle(e.target.value)}/>
-            <input placeholder='note' onChange={e => setNote(e.target.value)}/>
-            <button onClick={() => addTask()}>Add note</button>
+            <input className="form--input" placeholder='New task' onChange={e => setTitle(e.target.value)}/>
+            <input className="form--input" placeholder='New note' onChange={e => setNote(e.target.value)}/>
+            <button className="form--button" onClick={() => addTask()}>Add task</button>
         </div>
 )}

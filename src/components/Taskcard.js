@@ -1,7 +1,10 @@
 import axios from 'axios'
 import React from 'react'
 
+
 export default function Taskcard(props) {
+
+   
     
 
     // const [currentTasks, setCurrentTasks] = React.useState([])
@@ -19,15 +22,15 @@ export default function Taskcard(props) {
     //   },[])
 
     return (
-        <div>
+        <div className="card--main">
             {props.currentTasks.length ?
              <div>
-             <h1>{props.currentTasks[0].title}</h1>
-            <h2>{props.currentTasks[0].note}</h2>
-            <button onClick={() => props.deleteTask()}> Delete </button>
+             <h1 className="card--task">{props.currentTasks[0].title}</h1>
+            <h2 className="card--note">{props.currentTasks[0].note}</h2>
+            <button className="card--button" onClick={() => props.deleteTask()}> Complete Task </button>
             </div> :
              <div>
-                <h1>all done</h1>
+                <h1 className="card--task">Ooooh boy! I sure got alot done today!</h1>
             </div>}
         </div>
     )

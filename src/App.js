@@ -4,6 +4,7 @@ import axios from 'axios'
 import Form from './components/Form'
 import Taskcard from './components/Taskcard'
 import React from 'react'
+import Nav from './components/Nav'
 
 function App() {
   const [currentTasks, setCurrentTasks] = React.useState([])
@@ -29,6 +30,8 @@ function App() {
 
   return (
     <div className="App">
+
+        <Nav />
 
         <Form 
           getAllTasks={getAllTasks}
